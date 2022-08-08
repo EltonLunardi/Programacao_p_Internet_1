@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veja Mais - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="imagem/png"
+      href="./css/imagens/logo_vejamais.png"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    ></script>
+    <script src="script.js"></script>
+    <script src="package.js"></script>
+  </head>
+
+  <body>
+    <div id="container-register">
+      <form method="post" action="#" onsubmit="return validar(this);">
+        <div>
+          <label for="name">Nome Completo*:</label>
+          <input class="input-register" type="text" name="name" id="name" />
+        </div>
+
+        <div>
+          <label for="email">Email*:</label>
+          <input class="input-register" type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="phone">Telefone*:</label>
+          <input class="input-register" type="text" name="phone" id="phone" />
+        </div>
+
+        <div>
+          <label for="password">Senha*:</label>
+          <input
+            class="input-register"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+
+        <div>
+          <label for="password_again">Digite a senha novamente*:</label>
+          <input
+            class="input-register"
+            type="password"
+            name="password_again"
+            id="password_again"
+          />
+        </div>
+
+        <div>
+          <label for="sex">Sexo*</label>
+          <input
+            class="input-register-sex"
+            type="radio"
+            name="sex"
+            value="M"
+          />Masculino
+          <input
+            class="input-register-sex"
+            type="radio"
+            name="sexo"
+            value="F"
+          />Feminino
+        </div>
+
+        <div>
+          <label for="birth-date">Data de nascimento*:</label>
+          <input
+            class="input-register"
+            type="date"
+            name="birth-date"
+            id="birth-date"
+          />
+        </div>
+        <span class="register" style="font-size: 10px; margin-left: 10px"
+          >*Campos Obrigatórios</span
+        >
+
+        <!-- Parte do código para voltar ao menu Login
+                <input class="botao-cadastro" type="button" value="Enviar" onclick="submit_index();mensagem()">
+            -->
+        <!--Parte do código para testar o js -->
+        <input class="botton-register" type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
